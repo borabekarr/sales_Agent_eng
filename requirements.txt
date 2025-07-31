@@ -12,7 +12,13 @@ aiofiles==23.2.1
 google-generativeai==0.3.2
 assemblyai==0.17.0
 
-# Data Science - Phase 3
+# Data Science - Phase 3 (COMPLETE)
 numpy==1.24.3
 pandas==2.0.3
 scikit-learn==1.3.0
+
+# Database - Phase 4
+psycopg2-binary==2.9.7
+asyncpg==0.28.0
+supabase==1.0.4
+gotrue==1.0.1
