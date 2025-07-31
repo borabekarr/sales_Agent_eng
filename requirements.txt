@@ -17,8 +17,5 @@ numpy==1.24.3
 pandas==2.0.3
 scikit-learn==1.3.0
 
-# Database - Phase 4
+# Database - Phase 4 (Testing individually)
 psycopg2-binary==2.9.7
-asyncpg==0.28.0
-supabase==1.0.4
-gotrue==1.0.1
