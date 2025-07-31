@@ -1,0 +1,41 @@
+# Environment Configuration Template
+# Copy this file to .env and fill in your actual values
+
+# Assembly AI Configuration
+ASSEMBLY_AI_API_KEY=d62ad71a6cf54e02ac000e8c4920819f
+
+# Google Gemini API Configuration  
+GEMINI_API_KEY=AIzaSyCQkgYAsflx3ITD4_8XljNOhO2QxxoH52k
+
+# Application Configuration
+ENVIRONMENT=development
+PORT=8000
+LOG_LEVEL=INFO
+
+# CORS Configuration (comma-separated URLs)
+ALLOWED_ORIGINS=http://localhost:3000,http://localhost:3001,https://your-frontend-domain.com
+
+# Redis Configuration (optional, for session persistence)
+REDIS_URL=redis://localhost:6379
+
+# Rate Limiting
+MAX_REQUESTS_PER_MINUTE=60
+MAX_CONCURRENT_SESSIONS=10
+
+# AI Configuration
+MAX_CONTEXT_LENGTH=4000
+RESPONSE_TIMEOUT=10
+SUGGESTION_DELAY=2
+
+# Setup Instructions:
+# 1. Copy this file: cp env_template.txt .env
+# 2. Assembly AI API key is already configured (provided)
+# 3. Gemini API key is already configured (provided)
+# 4. Update ALLOWED_ORIGINS with your frontend URLs
+# 5. Adjust other settings as needed for your environment
+# 
+# Note: API keys are pre-configured for immediate use
+
+# Supabase Configuration
+SUPABASE_URL=your_supabase_url
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key 
