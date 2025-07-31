@@ -1,19 +1,31 @@
-import os
 from fastapi import FastAPI
+import datetime
 
 app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World", "Railway_Test": "SUCCESS", "Port": os.getenv("PORT", "8000")}
+    return {
+        "🚀 DEPLOYMENT TEST 🚀": "SUCCESS",
+        "message": "THIS IS DEFINITELY OUR APP RUNNING",
+        "timestamp": str(datetime.datetime.now()),
+        "test_id": "RAILWAY_TEST_2024_07_31_FINAL",
+        "status": "✅ Working perfectly!"
+    }
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {
+        "status": "healthy",
+        "message": "✅ OUR HEALTH ENDPOINT IS WORKING",
+        "app": "sales_assistant_backend"
+    }
 
-@app.get("/test")
-def test():
-    return {"test": "Railway is working!", "env_vars": {
-        "PORT": os.getenv("PORT"),
-        "RAILWAY_ENVIRONMENT": os.getenv("RAILWAY_ENVIRONMENT", "not_set")
-    }}
+@app.get("/obvious-test")
+def obvious_test():
+    return {
+        "🎯 OBVIOUS TEST": "If you see this, Railway is serving our app!",
+        "railway_working": True,
+        "deployment_successful": True,
+        "next_step": "Add full sales assistant features"
+    }
